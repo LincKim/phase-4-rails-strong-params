@@ -24,9 +24,9 @@ class BirdsController < ApplicationController
     end
   end
 
-  private 
+  private   # It is recommended that strong params be put in a private method for of reusabilty
 
-  def bird_params 
+  def bird_params   
     params.permit(:name, :species)
   end
 
